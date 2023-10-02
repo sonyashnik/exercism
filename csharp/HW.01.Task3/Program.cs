@@ -5,7 +5,6 @@ static void FillRandom(Int64[] array)
     var random = new Random();
     for (int i = 0; i < array.Length; i++)
     {
-
         array[i] = random.Next(0, 1000);
     }
 }
@@ -25,8 +24,10 @@ Int64[] arr1 = new Int64[dim];
 Int64[] arr2 = new Int64[dim];
 Int64[] arr3 = new Int64[dim];
 arr3.CopyTo(arr1, 0);
+
 var stopWatch = new Stopwatch();
 FillRandom(arr1);
+
 stopWatch.Start();
 MyReverseMethod(arr1, arr2);
 stopWatch.Stop();

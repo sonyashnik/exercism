@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Enter a dimension of arrays:");
+Console.Write("Enter a dimension of arrays: ");
 int i = Convert.ToInt32(Console.ReadLine());
 
 int[] array1 = new int[i];
@@ -12,7 +12,7 @@ for (int j = 0; j < i; j++)
 int[] array2 = new int[i];
 for  (int j = 0;j<i; j++)
 {
-    Console.WriteLine($"Enter array2[{j}]:");
+    Console.Write($"Enter array2[{j}]:");
     array2[j] = Convert.ToInt32(Console.ReadLine());
 }
 
