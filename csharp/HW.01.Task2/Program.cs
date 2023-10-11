@@ -1,20 +1,43 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-int[] array = new int[10];
+﻿int[] array = new int[10];
 for (int i = 0; i < array.Length-1; i++)
 {
-    Console.Write($"array[{i}] = ");
-    array[i] = Convert.ToInt32(Console.ReadLine());
+    bool loopFlag = false;
+    while (!loopFlag)
+    {
+        Console.Write($"array[{i}] = ");
+        if (int.TryParse(Console.ReadLine(), out array[i]))
+        {
+            loopFlag = true;
+        }
+    }
+    
 }
 Console.Write("array = { ");
 foreach (int element in array) Console.Write(element+" ");
 Console.WriteLine("} ");
 
-Console.Write("Enter one more value: ");
-int value = Convert.ToInt32(Console.ReadLine());
+bool valueIsValid = false;
+int value = 0;
+while (!valueIsValid)
+{
+    Console.Write("Enter one more value: ");
+    if (int.TryParse(Console.ReadLine(),out value))
+    {
+        valueIsValid = true;
+    }
+}
 
-Console.Write($"Enter the index in array from 0 to {array.Length - 1}: ");
-int index  = Convert.ToInt32(Console.ReadLine());
+bool indexIsValid = false;
+int index = 0;
+while (!indexIsValid)
+{
+    Console.Write($"Enter the index in array from 0 to {array.Length - 1}: ");
+    if (int.TryParse (Console.ReadLine(),out index) && int.IsPositive(index) && (index < array.Length))
+    {
+        indexIsValid = true;
+    }
+}
+
 
 for (int i = array.Length-1; i > index; i--)
 {
