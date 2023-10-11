@@ -1,23 +1,34 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.Write("Enter a dimension of arrays: ");
-int i = Convert.ToInt32(Console.ReadLine());
-
-int[] array1 = new int[i];
-Random random = new Random();
-for (int j = 0; j < i; j++)
+bool arrayDimIsValid = false;
+int arrayDimension = 0;
+while (!arrayDimIsValid)
 {
-    array1[j] = random.Next(1, i * 10);
+    Console.Write("Enter a valid dimension of arrays: ");
+    string consoleInput = Console.ReadLine();
+    if (int.TryParse(consoleInput, out int arrDim) && int.IsPositive(arrDim))
+    {
+        arrayDimIsValid = true;
+        arrayDimension = arrDim;
+    }
 }
 
-int[] array2 = new int[i];
-for  (int j = 0;j<i; j++)
+
+int[] array1 = new int[arrayDimension];
+Random random = new Random();
+for (int j = 0; j < array1.Length; j++)
+{
+    array1[j] = random.Next(1, arrayDimension * 10);
+}
+
+int[] array2 = new int[arrayDimension];
+for (int j = 0; j < array2.Length; j++)
 {
     Console.Write($"Enter array2[{j}]:");
     array2[j] = Convert.ToInt32(Console.ReadLine());
 }
 
-int[] array3 = new int[i];
-for (int j = 0;j<i; j++)
+int[] array3 = new int[arrayDimension];
+for (int j = 0; j < array3.Length; j++)
 {
     array3[j] = array1[j] + array2[j];
 }
