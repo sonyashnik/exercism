@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sipmle_array", "sipmle_array.csproj", "{1F94831F-F780-43DB-BCCA-B42336AF210E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResistorColor", "ResistorColor.csproj", "{53A58F59-EA31-4FC3-8624-B2AF6A90AFBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1F94831F-F780-43DB-BCCA-B42336AF210E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F94831F-F780-43DB-BCCA-B42336AF210E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F94831F-F780-43DB-BCCA-B42336AF210E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F94831F-F780-43DB-BCCA-B42336AF210E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A58F59-EA31-4FC3-8624-B2AF6A90AFBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A58F59-EA31-4FC3-8624-B2AF6A90AFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A58F59-EA31-4FC3-8624-B2AF6A90AFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A58F59-EA31-4FC3-8624-B2AF6A90AFBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B23508EE-1697-450D-8ADD-7EB79ECCDB47}
+		SolutionGuid = {E4F85C26-BAA8-4CB1-8B9D-EACCC11D0EC2}
 	EndGlobalSection
 EndGlobal
