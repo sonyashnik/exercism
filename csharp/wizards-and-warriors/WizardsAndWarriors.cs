@@ -2,7 +2,7 @@ using System;
 
 abstract class Character
 {
-    private string _characterType;
+    protected readonly string _characterType;
     protected Character(string characterType)
     {
         _characterType = characterType;
