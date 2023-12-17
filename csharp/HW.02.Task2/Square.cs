@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HW._02.Task2
+﻿namespace HW._02.Task2
 {
     internal class Square : IShape
     {
@@ -26,6 +20,5 @@ namespace HW._02.Task2
         {
             return $"This is {Name}. CLR Type is {GetType()}. Square is {GetSquare()}.";
         }
-
     }
 }

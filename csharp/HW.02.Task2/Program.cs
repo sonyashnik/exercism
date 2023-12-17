@@ -92,8 +92,3 @@ public class Program
         return (value > 0 && value <= 10);
     }
 }
-
-
-
-
-
