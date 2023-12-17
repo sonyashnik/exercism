@@ -11,7 +11,7 @@
             }
             set
             {
-                id = value;
+                if (value >=0) id = value;
             }
         }
         public UniqueItem()
