@@ -2,21 +2,17 @@
 {
     public class UniqueItem
     {
-        static int id = default;
-        public static int Id 
-        {
-            get 
-            { 
-                return id; 
-            }
-            set
-            {
-                if (value >=0) id = value;
-            }
-        }
+        static int _id = default;
+        public static int Id {get { return _id;}}
         public UniqueItem()
         {
-            id++;
+            _id++;
+        }
+
+        public UniqueItem(int offset)
+        {
+            if (offset < 0) throw new ArgumentOutOfRangeException(nameof(offset));
+            else _id = offset;
         }
     }
 }
