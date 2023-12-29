@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW._4.Task._2.Neighbor.List
 {
-    internal class Neighbor
+    public class Neighbor
     {
         private string _fullName;
         public int FlatNumber;

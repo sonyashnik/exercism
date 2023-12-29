@@ -5,21 +5,23 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHWSolution", "MyHWSolution.csproj", "{50056AA3-446D-461A-A282-747B1D5A15BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.01.Task1", "..\..\..\..\..\..\personal\repos\sonyashnik\exercism\csharp\HW.01.Task1\HW.01.Task1.csproj", "{69B438DE-998A-4F46-B686-585A8D4CD5BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.01.Task1", "..\HW.01.Task1\HW.01.Task1.csproj", "{69B438DE-998A-4F46-B686-585A8D4CD5BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.01.Task2", "..\..\..\..\..\..\personal\repos\sonyashnik\exercism\csharp\HW.01.Task2\HW.01.Task2.csproj", "{BBA9294B-0D8F-4332-8489-218B229FFC60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.01.Task2", "..\HW.01.Task2\HW.01.Task2.csproj", "{BBA9294B-0D8F-4332-8489-218B229FFC60}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.01.Task3", "..\..\..\..\..\..\personal\repos\sonyashnik\exercism\csharp\HW.01.Task3\HW.01.Task3.csproj", "{D5246EAF-E8AF-4463-A77A-1992BCE4B531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.01.Task3", "..\HW.01.Task3\HW.01.Task3.csproj", "{D5246EAF-E8AF-4463-A77A-1992BCE4B531}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.02.Task1", "..\..\..\..\..\..\personal\repos\sonyashnik\exercism\csharp\HW.02.Task1\HW.02.Task1.csproj", "{B65EA5ED-28EC-4D4B-B486-984C966C2477}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.02.Task1", "..\HW.02.Task1\HW.02.Task1.csproj", "{B65EA5ED-28EC-4D4B-B486-984C966C2477}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.02.Task2", "..\..\..\..\..\..\personal\repos\sonyashnik\exercism\csharp\HW.02.Task2\HW.02.Task2.csproj", "{4A5155AA-DFB5-4CF2-8537-584D4A01459D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.02.Task2", "..\HW.02.Task2\HW.02.Task2.csproj", "{4A5155AA-DFB5-4CF2-8537-584D4A01459D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.03.Task3", "..\..\..\..\..\..\personal\repos\sonyashnik\exercism\csharp\HW.03.Task3\HW.03.Task3.csproj", "{126D1602-3BAF-40EC-82C5-975742C7B61C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.03.Task3", "..\HW.03.Task3\HW.03.Task3.csproj", "{126D1602-3BAF-40EC-82C5-975742C7B61C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.4.Task.1.String.Extension", "..\HW.4.Task.1.String.Extension\HW.4.Task.1.String.Extension.csproj", "{5BBC2A05-D370-4512-A3F1-5BCED3FC8F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.4.Task.2.Neighbor.List", "..\..\..\..\..\..\personal\repos\sonyashnik\exercism\csharp\HW.4.Task.2.Neighbor.List\HW.4.Task.2.Neighbor.List.csproj", "{00E2EC38-8778-47BE-9429-4E1F00F41480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.4.Task.2.Neighbor.List", "..\HW.4.Task.2.Neighbor.List\HW.4.Task.2.Neighbor.List.csproj", "{00E2EC38-8778-47BE-9429-4E1F00F41480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.4.Task.3.Neighbor.Dictionary", "..\HW.4.Task.3.Neighbor.Dictionary\HW.4.Task.3.Neighbor.Dictionary.csproj", "{7DC0312D-B445-4244-9A83-EB517DE951CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{00E2EC38-8778-47BE-9429-4E1F00F41480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00E2EC38-8778-47BE-9429-4E1F00F41480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00E2EC38-8778-47BE-9429-4E1F00F41480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC0312D-B445-4244-9A83-EB517DE951CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC0312D-B445-4244-9A83-EB517DE951CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC0312D-B445-4244-9A83-EB517DE951CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC0312D-B445-4244-9A83-EB517DE951CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@ namespace HW._4.Task._1.String.Extension
     {
         public static string GetString(this string str) 
         { 
-            return $"{str.Substring(0,5)}...";
+            return str.Length >5?$"{str.Substring(0,5)}..." : str;
         }
     }
 }

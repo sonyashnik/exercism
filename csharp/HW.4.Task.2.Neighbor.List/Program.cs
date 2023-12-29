@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using  HW._4.Task._2.Neighbor.List;
 
-List <Neighbor> floorNeigbors = new List <Neighbor>();
+IList <Neighbor> floorNeigbors = new List <Neighbor>();
 floorNeigbors.Add(new Neighbor("Chandler Bing", 1, "6-66-666"));
 floorNeigbors.Add(new Neighbor("Joye Tribbiani", 2, "7-77-777"));
 floorNeigbors.Add(new Neighbor("Rachel Green", 3, "2-22-222"));
