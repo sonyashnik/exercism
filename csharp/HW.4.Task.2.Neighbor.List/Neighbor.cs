@@ -18,6 +18,7 @@ namespace HW._4.Task._2.Neighbor.List
             FlatNumber = flatNumber;
             _phoneNumber = phoneNumber;
         }
+
         public override string ToString()
         {
             return $"{_fullName}, phone: {_phoneNumber}";
