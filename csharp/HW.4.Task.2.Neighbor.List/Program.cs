@@ -33,4 +33,3 @@ foreach (Neighbor neighbor in floorNeigbors)
 }
 
 if (!neighborIsFound) Console.WriteLine($"There is no flat number {flatNumber} here!");
-
