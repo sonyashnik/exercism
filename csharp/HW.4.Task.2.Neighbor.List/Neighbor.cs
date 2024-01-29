@@ -9,8 +9,9 @@ namespace HW._4.Task._2.Neighbor.List
     public class Neighbor
     {
         private string _fullName;
-        public int FlatNumber;
         private string _phoneNumber;
+
+        public int FlatNumber { get; set; }
 
         public Neighbor(string fullName, int flatNumber, string phoneNumber)
         {
