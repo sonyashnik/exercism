@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW._4.Task._1.String.Extension
 {
-    static class StringHelper
+    static class StringExtension
     {
         public static string GetString(this string str) 
         { 
