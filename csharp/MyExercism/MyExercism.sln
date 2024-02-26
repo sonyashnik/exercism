@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternationalCallingConnois
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheWeatherInDeather", "..\the-weather-in-deather\TheWeatherInDeather.csproj", "{C2B7BDAB-53F4-47A8-A3BF-9D8D64D898E5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoteControlCompetition", "..\remote-control-competition\RemoteControlCompetition.csproj", "{9B44E179-26C5-4B7E-B435-2811FB2B5192}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{C2B7BDAB-53F4-47A8-A3BF-9D8D64D898E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2B7BDAB-53F4-47A8-A3BF-9D8D64D898E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2B7BDAB-53F4-47A8-A3BF-9D8D64D898E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B44E179-26C5-4B7E-B435-2811FB2B5192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B44E179-26C5-4B7E-B435-2811FB2B5192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B44E179-26C5-4B7E-B435-2811FB2B5192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B44E179-26C5-4B7E-B435-2811FB2B5192}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
