@@ -36,7 +36,7 @@ zero or more letters and underscores.
 
 In all cases the input string is guaranteed to be non-null. If an empty string is passed to the `Clean` function, an empty string should be returned.
 
-Note that the caller should avoid calling the routine `Clean` with an empty identifier since such identifiers are ineffectual.
+Note that the caller should avoid calling the routine `Clean` with an empty identifier since such identities are ineffectual.
 
 ## 1. Replace any spaces encountered with underscores
 
