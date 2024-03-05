@@ -1,30 +1,34 @@
 using System;
+using System.Net.Security;
 
 static class GameMaster
 {
     public static string Describe(Character character)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Character) method");
-    }
+        return $"You're a level {character.Level} {character.Class} with {character.HitPoints} hit points.";
+
+	}
 
     public static string Describe(Destination destination)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Destination) method");
+        return $"You've arrived at {destination.Name}, which has {destination.Inhabitants} inhabitants.";
     }
 
     public static string Describe(TravelMethod travelMethod)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(TravelMethod) method");
-    }
+        return travelMethod == TravelMethod.Walking ?
+            "You're traveling to your destination by walking." : "You're traveling to your destination on horseback.";
+
+	}
 
     public static string Describe(Character character, Destination destination, TravelMethod travelMethod)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Character, Destination, TravelMethod) method");
+        return $"{GameMaster.Describe(character)} {GameMaster.Describe(travelMethod)} {GameMaster.Describe(destination)}" ;
     }
 
     public static string Describe(Character character, Destination destination)
     {
-        throw new NotImplementedException("Please implement the (static) GameMaster.Describe(Character, Destination) method");
+        return GameMaster.Describe(character, destination, TravelMethod.Walking);
     }
 }
 
