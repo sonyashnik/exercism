@@ -5,7 +5,8 @@ public class DeveloperPrivilegesTests
 {
     [Fact]
     [Task(1)]
-    public void GetAdmin()
+    public void 
+        Admin()
     {
         var authenticator = new Authenticator();
         var admin = authenticator.Admin;
