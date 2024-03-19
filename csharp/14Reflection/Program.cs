@@ -34,13 +34,13 @@ foreach (MethodInfo mi in motoType.GetMethods(BindingFlags.DeclaredOnly
 	Console.WriteLine($"{modificator}{mi.ReturnType.Name} {mi.Name} ()");
 }
 Console.WriteLine();
-Console.WriteLine("FieldInfo:");
-foreach (FieldInfo fi in motoType.GetFields(BindingFlags.Public |
-		 BindingFlags.Static | BindingFlags.FlattenHierarchy))
-{
-	
-	Console.WriteLine($"{fi.Name}");
-}
-FieldInfo fieldInfo = obj.GetType().GetTypeInfo().GetDeclaredField("motoState");
-fieldInfo.SetValue(obj, "old");
-Console.WriteLine(obj);
+//Console.WriteLine("FieldInfo:");
+//foreach (FieldInfo fi in motoType.GetFields(BindingFlags.Public |
+//		 BindingFlags.Static | BindingFlags.FlattenHierarchy))
+//{
+//	
+//	Console.WriteLine($"{fi.Name}");
+//}
+//FieldInfo fieldInfo = obj.GetType().GetTypeInfo().GetDeclaredField("motoState");
+//fieldInfo.SetValue(obj, "old");
+//Console.WriteLine(obj);
