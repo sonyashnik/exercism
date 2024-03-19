@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.4.Task.2.Neighbor.List",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.4.Task.3.Neighbor.Dictionary", "..\HW.4.Task.3.Neighbor.Dictionary\HW.4.Task.3.Neighbor.Dictionary.csproj", "{7DC0312D-B445-4244-9A83-EB517DE951CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.5.Rectangle.Struct", "..\HW.5.Rectangle.Struct\HW.5.Rectangle.Struct.csproj", "{85609F0B-4CDB-4F14-8358-30EA3193A8F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.5.Rectangle.Struct", "..\HW.5.Rectangle.Struct\HW.5.Rectangle.Struct.csproj", "{85609F0B-4CDB-4F14-8358-30EA3193A8F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW.5.Anonymos", "..\HW.5.Anonymos\HW.5.Anonymos.csproj", "{487D4773-281F-4CDF-A2A6-EEBB271B055A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW.5.Anonymos", "..\HW.5.Anonymos\HW.5.Anonymos.csproj", "{487D4773-281F-4CDF-A2A6-EEBB271B055A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14Reflection", "..\14Reflection\14Reflection.csproj", "{23A0D78E-5910-4803-858E-F2E6BF8F2A56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{487D4773-281F-4CDF-A2A6-EEBB271B055A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{487D4773-281F-4CDF-A2A6-EEBB271B055A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{487D4773-281F-4CDF-A2A6-EEBB271B055A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A0D78E-5910-4803-858E-F2E6BF8F2A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A0D78E-5910-4803-858E-F2E6BF8F2A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A0D78E-5910-4803-858E-F2E6BF8F2A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A0D78E-5910-4803-858E-F2E6BF8F2A56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
