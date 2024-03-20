@@ -65,6 +65,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RollTheDie", "..\roll-the-d
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeveloperPrivileges", "..\developer-privileges\DeveloperPrivileges.csproj", "{98F03B64-0975-4814-BD61-58D55FAC1BB9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectRelationalMapping", "..\object-relational-mapping\ObjectRelationalMapping.csproj", "{4CAB4EDA-FF23-491D-BF76-50BC8C0EABF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LandGrabInSpace", "..\land-grab-in-space\LandGrabInSpace.csproj", "{E54FC99D-F995-4783-BF59-E815C210E29B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +199,14 @@ Global
 		{98F03B64-0975-4814-BD61-58D55FAC1BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98F03B64-0975-4814-BD61-58D55FAC1BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98F03B64-0975-4814-BD61-58D55FAC1BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CAB4EDA-FF23-491D-BF76-50BC8C0EABF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CAB4EDA-FF23-491D-BF76-50BC8C0EABF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CAB4EDA-FF23-491D-BF76-50BC8C0EABF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CAB4EDA-FF23-491D-BF76-50BC8C0EABF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E54FC99D-F995-4783-BF59-E815C210E29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54FC99D-F995-4783-BF59-E815C210E29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54FC99D-F995-4783-BF59-E815C210E29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54FC99D-F995-4783-BF59-E815C210E29B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

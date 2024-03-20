@@ -1,26 +1,46 @@
 using System;
+using System.Linq.Expressions;
+using static Database;
 
-public class Orm
+public class Orm : IDisposable
 {
     private Database database;
-
-    public Orm(Database database)
+	
+	public Orm(Database database)
     {
         this.database = database;
     }
 
     public void Begin()
     {
-        throw new NotImplementedException($"Please implement the Orm.Begin() method");
-    }
+        database.BeginTransaction();
+	}
 
     public void Write(string data)
     {
-        throw new NotImplementedException($"Please implement the Orm.Write() method");
-    }
-
-    public void Commit()
+		try
+		{
+			database.Write(data);
+		}
+		catch (InvalidOperationException)
+		{
+            Dispose();
+        }
+	}
+	public void Commit()
     {
-        throw new NotImplementedException($"Please implement the Orm.Commit() method");
+		try
+		{
+			database.EndTransaction();
+		}
+		catch (InvalidOperationException)
+		{
+			Dispose();
+		}
+	}
+
+    public void Dispose()
+    {
+        database.Dispose();
     }
 }
