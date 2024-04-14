@@ -23,8 +23,9 @@ public static class Appointment
 
     public static DateTime Schedule(string appointmentDateDescription, Location location)
     {
-		DateTime dateValue = DateTime.Parse(appointmentDateDescription, new CultureInfo("en-US",false));        
-        return TimeZoneInfo.ConvertTimeToUtc(dateValue, GetTimeZone(location));
+		//		DateTime dateValue = DateTime.Parse(appointmentDateDescription, new CultureInfo("en-US",false));
+		DateTime dateValue = DateTime.Parse(appointmentDateDescription, GetCulture(location));   
+		return TimeZoneInfo.ConvertTimeToUtc(dateValue, GetTimeZone(location));
 	}
 
 	public static DateTime GetAlertTime(DateTime appointment, AlertLevel alertLevel)

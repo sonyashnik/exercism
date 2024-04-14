@@ -9,7 +9,7 @@ public class RemoteControlCleanupTests
     {
         var car = new RemoteControlCar();
         string expected = "Walker Industries Inc.";
-        car.Telemetry.ShowSponsor(expected);
+        car.TelemetryInfo.ShowSponsor(expected);
         Assert.Equal(expected, car.CurrentSponsor);
     }
 
@@ -19,7 +19,7 @@ public class RemoteControlCleanupTests
     {
         var car = new RemoteControlCar();
         string expected = "100 meters per second";
-        car.Telemetry.SetSpeed(100, "mps");
+        car.TelemetryInfo.SetSpeed(100, "mps");
         Assert.Equal(expected, car.GetSpeed());
     }
 }

@@ -1,3 +1,5 @@
+using RemoteControlCleanup;
+
 public class RemoteControlCar
 {
 	private enum SpeedUnits
@@ -27,19 +29,12 @@ public class RemoteControlCar
 			return Amount + " " + unitsString;
 		}
 	}
-	public interface ITelemetry
-	{
-		void Calibrate();
-		bool SelfTest();
-		void ShowSponsor(string sponsorName);
-		void SetSpeed(decimal amount, string unitsString);
-	}
-
-	private class TelemetryClass : ITelemetry
+	
+	private class Telemetry : ITelemetry
 	{
 		private RemoteControlCar _car;
 
-		public TelemetryClass(RemoteControlCar car)
+		public Telemetry(RemoteControlCar car)
 		{
 			_car = car;
 		}
@@ -68,14 +63,14 @@ public class RemoteControlCar
 			_car.SetSpeed(new Speed(amount, speedUnits));
 		}
 	}
-    public ITelemetry Telemetry { get; }
+    public ITelemetry TelemetryInfo { get; }
 	public string CurrentSponsor { get; private set; }
 
 	private Speed currentSpeed;
 
 	public RemoteControlCar()
 	{
-		Telemetry = new TelemetryClass(this);
+		TelemetryInfo = new Telemetry(this);
 	}
 	public string GetSpeed()
     {
