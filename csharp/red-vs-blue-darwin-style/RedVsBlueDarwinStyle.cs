@@ -1,4 +1,7 @@
-public static class RedRemoteControlCarTeam
+using Red = RedRemoteControlCarTeam;
+using Blue = BlueRemoteControlCarTeam;
+
+namespace RedRemoteControlCarTeam
 {
     public class RemoteControlCar
     {
@@ -29,7 +32,7 @@ public static class RedRemoteControlCarTeam
     }
 }
 
-public static class BlueRemoteControlCarTeam
+namespace BlueRemoteControlCarTeam
 {
     public class RemoteControlCar
     {
@@ -54,25 +57,27 @@ public static class BlueRemoteControlCarTeam
         // blue members and API
     }
 }
-
-public static class CarBuilder
+namespace Combined
 {
-    public static RedRemoteControlCarTeam.RemoteControlCar BuildRed()
+	public static class CarBuilder
     {
-        return new RedRemoteControlCarTeam.RemoteControlCar(
-            new RedRemoteControlCarTeam.Motor(),
-            new RedRemoteControlCarTeam.Chassis(),
-            new RedRemoteControlCarTeam.Telemetry(),
-            new RedRemoteControlCarTeam.RunningGear()
-        );
-    }
+        public static Red.RemoteControlCar BuildRed()
+        {
+            return new Red.RemoteControlCar(
+                new Red.Motor(),
+                new Red.Chassis(),
+                new Red.Telemetry(),
+                new Red.RunningGear()
+            );
+        }
 
-    public static BlueRemoteControlCarTeam.RemoteControlCar BuildBlue()
-    {
-        return new BlueRemoteControlCarTeam.RemoteControlCar(
-            new BlueRemoteControlCarTeam.Motor(),
-            new BlueRemoteControlCarTeam.Chassis(),
-            new BlueRemoteControlCarTeam.Telemetry()
-        );
+        public static Blue.RemoteControlCar BuildBlue()
+        {
+            return new Blue.RemoteControlCar(
+                new Blue.Motor(),
+                new Blue.Chassis(),
+                new Blue.Telemetry()
+            );
+        }
     }
 }
