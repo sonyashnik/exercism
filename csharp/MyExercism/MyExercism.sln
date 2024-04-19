@@ -83,6 +83,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedVsBlueDarwinStyle", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrmInOneGo", "..\orm-in-one-go\OrmInOneGo.csproj", "{B2FD54C5-D02A-4A81-88BF-9825F12DAFA4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighSchoolSweethearts", "..\high-school-sweethearts\HighSchoolSweethearts.csproj", "{87A995CE-3D13-4D7B-9DEC-40C96593A3BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -249,6 +251,10 @@ Global
 		{B2FD54C5-D02A-4A81-88BF-9825F12DAFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2FD54C5-D02A-4A81-88BF-9825F12DAFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2FD54C5-D02A-4A81-88BF-9825F12DAFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A995CE-3D13-4D7B-9DEC-40C96593A3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A995CE-3D13-4D7B-9DEC-40C96593A3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A995CE-3D13-4D7B-9DEC-40C96593A3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A995CE-3D13-4D7B-9DEC-40C96593A3BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
