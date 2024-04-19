@@ -36,7 +36,7 @@ public class BeautySalonGoesGlobalTests
     public void Schedule_london()
     {
         Assert.Equal(new DateTime(2019, 07, 25, 12, 45, 0),
-            Appointment.Schedule("7/25/2019 13:45:00", Location.London));
+            Appointment.Schedule("25/7/2019 13:45:00", Location.London));
     }
 
     [Fact]
@@ -44,7 +44,7 @@ public class BeautySalonGoesGlobalTests
     public void Schedule_paris()
     {
         Assert.Equal(new DateTime(2019, 07, 25, 12, 45, 0),
-            Appointment.Schedule("7/25/2019 14:45:00", Location.Paris));
+            Appointment.Schedule("25/7/2019 14:45:00", Location.Paris));
     }
 
     [Fact]
