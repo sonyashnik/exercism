@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -16,25 +17,33 @@ public class LogParser
     public string[] SplitLogLine(string text)
     {
         string pattern = @"<[-,*,=,^]+>";
-        Regex regex = new Regex(pattern);
-        return regex.Split(text);       
+        return Regex.Split(text, pattern);       
     }
 
     public int CountQuotedPasswords(string lines)
     {
 		string pattern = @""".*password.*""";
-		Regex regex = new Regex(pattern);
-
 		return Regex.Matches(lines, pattern, RegexOptions.IgnoreCase).Count();
 	}
 
     public string RemoveEndOfLineText(string line)
     {
-        throw new NotImplementedException($"Please implement the LogParser.RemoveEndOfLineText() method");
+        string pattern = @"end-of-line\d+";
+        return Regex.Replace(line, pattern, String.Empty);
     }
 
     public string[] ListLinesWithPasswords(string[] lines)
     {
-        throw new NotImplementedException($"Please implement the LogParser.ListLinesWithPasswords() method");
-    }
+		string pattern = @"password\w+";
+		var processedLines = new List<string>();
+		foreach (string line in lines)
+		{
+			Match passwordMatch = Regex.Match(line, pattern, RegexOptions.IgnoreCase);
+			if (passwordMatch == Match.Empty)
+				processedLines.Add($"--------: {line}");
+			else
+				processedLines.Add($"{passwordMatch.Value}: {line}");
+		}
+		return processedLines.ToArray();
+	}
 }
