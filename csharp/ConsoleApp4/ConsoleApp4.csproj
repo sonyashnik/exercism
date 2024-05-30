@@ -7,10 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="Delegates.GlobalMotorcycleServiceModule">
-      <HintPath>..\Delegates.GlobalMotorcycleServiceModule\bin\Debug\net8.0\Delegates.GlobalMotorcycleServiceModule.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
