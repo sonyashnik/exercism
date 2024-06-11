@@ -9,9 +9,12 @@ namespace Delegates.MotorcycleConsole
 			//Option 1
 			//MotoServiceDelegate @delegate = new MotoServiceDelegate(GoToService);
 			//Option 2
-			MotoServiceDelegate @delegate = GoToService;
-			@delegate += SendSMS;
-
+			//MotoServiceDelegate @delegate = GoToService;
+			//Action<int> @delegate = GoToService;
+			//@delegate += SendSMS;
+			Action<int> @delegate =d =>	Console.WriteLine($"Time to go to motoservice. Current distance of your bike: {d} km.");
+			@delegate += d => Console.WriteLine($"SMS:Time to go to motoservice. Current distance of your bike: {d} km.");
+			
 			MotorcycleService service = new MotorcycleService(@delegate);
 			MyConsoleMotorcycle motorcycle = new("Honda");
 			motorcycle.StartEngine();
