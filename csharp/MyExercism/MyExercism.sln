@@ -103,6 +103,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighScores", "..\high-score
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hamming", "..\hamming\Hamming.csproj", "{71CD604A-E21F-4353-83FF-2103FD720771}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NucleotideCount", "..\nucleotide-count\NucleotideCount.csproj", "{7055EC97-9328-44D1-98FD-9907158103F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -309,6 +311,10 @@ Global
 		{71CD604A-E21F-4353-83FF-2103FD720771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71CD604A-E21F-4353-83FF-2103FD720771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71CD604A-E21F-4353-83FF-2103FD720771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7055EC97-9328-44D1-98FD-9907158103F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7055EC97-9328-44D1-98FD-9907158103F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7055EC97-9328-44D1-98FD-9907158103F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7055EC97-9328-44D1-98FD-9907158103F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
