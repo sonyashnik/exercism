@@ -6,43 +6,34 @@ using System.Xml.Linq;
 
 public class Robot
 {
-    private string _name = String.Empty;
-    private HashSet<string> _robotNames = new HashSet<string>();
-    public string Name
-    {
-        get
-        {
-            return _name;
-        }
-    }
+    private static readonly Random Rnd = new Random();
+    private static HashSet<string> _robotNames = new HashSet<string>();
+    public string Name { get; private set; }
     public Robot()
-    { 
-        _name = GenerateUniqueName(); 
+    {
+        Reset();
     }
 
     public void Reset()
     {
-        _robotNames.Remove(_name);
-        _name = String.Empty;
-        _name = GenerateUniqueName();
+         Name = GenerateUniqueName();
     }
 
-    public string GenerateName()
+    private string GenerateName()
     {
-        var rnd = new Random();
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         var sb = new StringBuilder();
         for (int i = 0; i < 2; i++)
         {
-            sb.Append(chars[rnd.Next(0, chars.Length)]);
+            sb.Append(chars[Rnd.Next(0, chars.Length)]);
         }
         for (int i = 0; i < 3; i++)
         {
-            sb.Append(rnd.Next(0, 9));
+            sb.Append(Rnd.Next(0, 10));
         }
         return sb.ToString();
     }
-    public string GenerateUniqueName()
+    private string GenerateUniqueName()
     {
         var name = GenerateName();
         while (!_robotNames.Add(name))
