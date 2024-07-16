@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 [Flags]
 public enum Allergen
@@ -16,17 +18,19 @@ public enum Allergen
 
 public class Allergies
 {
+    private readonly int _allergyScore = default(int);
     public Allergies(int mask)
     {
+        _allergyScore = mask % 256;
     }
 
     public bool IsAllergicTo(Allergen allergen)
     {
-        throw new NotImplementedException("You need to implement this method.");
+        return ((_allergyScore & (int)allergen) == 0) ? false : true;
     }
 
-    public Allergen[] List()
+    public List<Allergen> List()
     {
-        throw new NotImplementedException("You need to implement this method.");
+        return Enum.GetValues(typeof(Allergen)).Cast<Allergen>().Where(IsAllergicTo).Select(_=>_).ToList();
     }
 }
