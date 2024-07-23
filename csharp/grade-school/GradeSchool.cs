@@ -1,20 +1,25 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 
 public class GradeSchool
 {
-    public bool Add(string student, int grade)
+    private Dictionary<string,int> _studentInfos { get; set; }= new();
+    public GradeSchool()
     {
-        throw new NotImplementedException("You need to implement this method.");
     }
 
-    public IEnumerable<string> Roster()
-    {
-        throw new NotImplementedException("You need to implement this method.");
-    }
+    public bool Add(string student, int grade) => _studentInfos.TryAdd(student, grade);
 
-    public IEnumerable<string> Grade(int grade)
-    {
-        throw new NotImplementedException("You need to implement this method.");
-    }
+    public IEnumerable<string> Roster() => _studentInfos
+        .OrderBy(_ =>_.Value)
+        .ThenBy(_ => _.Key)
+        .Select(_ => _.Key);
+
+    public IEnumerable<string> Grade(int grade) => _studentInfos
+        .Where(_=>_.Value == grade)
+        .OrderBy(_=>_.Key)
+        .Select(_=>_.Key);
+
 }
