@@ -5,7 +5,6 @@ using System.Linq;
 [Flags]
 public enum Allergen
 {
-    None = 0,
     Eggs = 1,
     Peanuts = 2,
     Shellfish = 4,
@@ -24,13 +23,7 @@ public class Allergies
         _allergyScore = mask % 256;
     }
 
-    public bool IsAllergicTo(Allergen allergen)
-    {
-        return ((_allergyScore & (int)allergen) == 0) ? false : true;
-    }
+    public bool IsAllergicTo(Allergen allergen) =>((Allergen)_allergyScore).HasFlag(allergen);
 
-    public List<Allergen> List()
-    {
-        return Enum.GetValues(typeof(Allergen)).Cast<Allergen>().Where(IsAllergicTo).Select(_=>_).ToList();
-    }
+    public Allergen[] List() => Enum.GetValues<Allergen>().Where(IsAllergicTo).ToArray();
 }
