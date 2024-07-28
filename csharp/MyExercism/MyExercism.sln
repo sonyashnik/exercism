@@ -117,6 +117,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircularBuffer", "..\circul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clock", "..\clock\Clock.csproj", "{A25F43B1-C42F-46BE-83DD-E53D62578E8C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bob", "..\bob\Bob.csproj", "{619B543C-F226-4C46-9DE2-F536FC511296}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -351,6 +353,10 @@ Global
 		{A25F43B1-C42F-46BE-83DD-E53D62578E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A25F43B1-C42F-46BE-83DD-E53D62578E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A25F43B1-C42F-46BE-83DD-E53D62578E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{619B543C-F226-4C46-9DE2-F536FC511296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{619B543C-F226-4C46-9DE2-F536FC511296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{619B543C-F226-4C46-9DE2-F536FC511296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{619B543C-F226-4C46-9DE2-F536FC511296}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
